@@ -1,5 +1,6 @@
 package calculator;
 
+import calculator.separation.SeparationString;
 import camp.nextstep.edu.missionutils.Console;
 
 public class Application {
@@ -7,5 +8,8 @@ public class Application {
         // 데이터 입력
         String input = Console.readLine();
         Console.close();
+
+        SeparationString separationString = new SeparationString(input);
+        separationString.separate();
     }
 }
