@@ -31,11 +31,11 @@
 
 ## 예외사항
 
-|             예외              |              처리방식              |               현황                |
-|:---------------------------:|:------------------------------:|:-------------------------------:|
-|    구분자가 연속으로 2번이상 나오는 경우    |  `IllegalArgumentException`처리  | <input type="checkbox" checked> |
-|   문자열에 구분자가 아닌 문자가 나오는 경우   |  `IllegalArgumentException`처리  |     <input type="checkbox">     |
-| 문자열의 맨 앞이나 맨 뒤에 구분자가 나오는 경우 |  `IllegalArgumentException`처리  | <input type="checkbox" checked> |
-|     커스텀 구분자에 숫자가 있는 경우      |  `IllegalArgumentException`처리  | <input type="checkbox" checked> |
-|    입력받은 문자열이 비어있을 경우("")    |             0으로 계산             | <input type="checkbox" checked> |
-|   문자열에서 "-"뒤에 숫자가 나오는 경우    | 숫자를 음수가 아닌 "-","숫자"처럼 두 글자로 처리 |     <input type="checkbox">     |
+|             예외              |              처리방식              | 현황 |
+|:---------------------------:|:------------------------------:|:--:|
+|    구분자가 연속으로 2번이상 나오는 경우    |  `IllegalArgumentException`처리  | ✅  |
+|   문자열에 구분자가 아닌 문자가 나오는 경우   |  `IllegalArgumentException`처리  | ❌  |
+| 문자열의 맨 앞이나 맨 뒤에 구분자가 나오는 경우 |  `IllegalArgumentException`처리  | ✅  |
+|     커스텀 구분자에 숫자가 있는 경우      |  `IllegalArgumentException`처리  | ✅  |
+|    입력받은 문자열이 비어있을 경우("")    |             0으로 계산             | ✅  |
+|   문자열에서 "-"뒤에 숫자가 나오는 경우    | 숫자를 음수가 아닌 "-","숫자"처럼 두 글자로 처리 | ❌  |
