@@ -1,5 +1,6 @@
 package calculator;
 
+import calculator.calculation.SumNum;
 import calculator.separation.SeparationString;
 import camp.nextstep.edu.missionutils.Console;
 
@@ -11,5 +12,6 @@ public class Application {
 
         SeparationString separationString = new SeparationString(input);
         separationString.separate();
+        int value = SumNum.sum(separationString.getNum());
     }
 }
