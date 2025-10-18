@@ -30,9 +30,22 @@ public class ExceptionChecker {
 
     // 문자열속에 구분자가 아닌 문자가 들어있는지 확인
     public static void checkInvalidSeparator(String[] num) {
+        try {
+            for (String s : num) {
+                Integer.parseInt(s);
+            }
+        } catch (Exception e) {
+            throw new IllegalArgumentException();
+        }
     }
 
     // "-"가 들어있는지 확인
     public static void checkHyphen(String[] num) {
+        for (String s : num) {
+            int value = Integer.parseInt(s);
+            if (value < 0) {
+                throw new IllegalArgumentException();
+            }
+        }
     }
 }
