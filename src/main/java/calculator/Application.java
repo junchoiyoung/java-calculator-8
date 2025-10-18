@@ -13,5 +13,7 @@ public class Application {
         SeparationString separationString = new SeparationString(input);
         separationString.separate();
         int value = SumNum.sum(separationString.getNum());
+
+        System.out.println("결과 : " + value);
     }
 }
