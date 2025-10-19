@@ -14,7 +14,7 @@ public class Application {
         SeparationString separationString = new SeparationString(input);
         separationString.separate();
 
-        int sumValue = SumNum.sum(separationString.getNum());
+        int sumValue = SumNum.sum(separationString.getNumArr());
 
         Output.printOut(sumValue);
     }
