@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class SeparationString {
 
     String str;
-    String[] num;
+    String[] numArr;
 
     // 구분자 배열
     ArrayList<String> separatorList = new ArrayList<>() {{
@@ -31,10 +31,10 @@ public class SeparationString {
             separatorList.addAll(SeparatorSplitter.divide(separator));
         }
 
-        num = SeparationNum.separateNum(str, separatorList);
+        numArr = SeparationNum.separateNum(str, separatorList);
     }
 
-    public String[] getNum() {
-        return num == null ? new String[]{"0"} : num;
+    public String[] getNumArr() {
+        return numArr == null ? new String[]{"0"} : numArr;
     }
 }
